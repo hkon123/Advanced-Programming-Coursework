@@ -54,12 +54,7 @@ def exercise3():
             print("\n\nUse integers to define values\n\n")
     print(weekdays)
     days = [*range(1,daysInMonth+1)]
-    firstWeekDays = days[0:7-startDay]
-    week1Tuple = tuple(filler for i in range(startDay))
-    tempWeekList = list(week1Tuple)
-    tempWeekList.extend(firstWeekDays)
-    week1Tuple = tuple(tempWeekList)
-    print(template.format(*week1Tuple))
+    print(template.format(*list(filler for i in range(startDay)), *list(range(1,7-startDay+1))))
     startDay = 7-startDay
     for i in range(5):
         try:
@@ -67,11 +62,7 @@ def exercise3():
             startDay+=7
         except:
             lastWeekDays = days[startDay:daysInMonth]
-            lastWeekTuple = tuple(filler for i in range(7-len(lastWeekDays)))
-            tempWeekList = list(lastWeekTuple)
-            lastWeekDays.extend(tempWeekList)
-            lastWeekTuple = tuple(lastWeekDays)
-            print(template.format(*lastWeekTuple))
+            print(template.format(*lastWeekDays,*list(filler for i in range(7-len(lastWeekDays)))))
             break
 
 
