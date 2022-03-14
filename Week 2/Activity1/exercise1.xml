@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <details>
+    <name>Pace, Camden G.</name>
+    <ID>16430122-1521</ID>
+    <courses>
+      <mathematics>
+        <test1>54</test1>
+        <test2>63</test2>
+      </mathematics>
+      <English>
+        <essay1>C+</essay1>
+        <essay2>B+</essay2>
+      </English>
+      <IT>
+        <activity1>Pass</activity1>
+        <test2>32</test2>
+        <essay3>C+</essay3>
+      </IT>
+    </courses>
+  </details>
+  <details>
+    <name>Weber, lucky X.</name>
+    <ID>16470212-9851</ID>
+    <courses>
+      <mathematics>
+        <test1>32</test1>
+        <test2>41</test2>
+      </mathematics>
+      <English>
+        <essay1>C-</essay1>
+        <essay2>C-</essay2>
+      </English>
+      <IT>
+        <activity1>Fail</activity1>
+        <test2>73</test2>
+        <essay3>D+</essay3>
+      </IT>
+    </courses>
+  </details>
+</students>

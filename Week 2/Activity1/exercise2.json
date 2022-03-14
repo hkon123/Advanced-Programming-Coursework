@@ -1,0 +1,32 @@
+{
+  "races":[
+    "race1":{
+      "type":"Flat",
+      "Weather":"Warm"
+    },
+    "race2":{
+      "type":"Flat",
+      "Weather":"Wet"
+    },
+    "race3":{
+      "type":"Hurdle",
+      "Weather":"Cold"
+    }
+  ],
+  "horses": [
+    "horse":{
+      "name":"Birthday List",
+      "age": 2,
+      "race1": 2,
+      "race2": "N/P",
+      "race3": 3
+    },
+    "horse":{
+      "name":"Goodtime",
+      "age": "N/R",
+      "race1": 1,
+      "race2": "N/R",
+      "race3": 3
+    }
+  ]
+}
