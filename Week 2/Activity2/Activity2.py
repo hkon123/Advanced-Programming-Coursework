@@ -90,6 +90,10 @@ def exercise3():
     origKeys.insert(0, origKeys.pop())
     writeListOfDictsToFile(data,origKeys,"{:<15} {:<10} {:<22} {:<20} {:<45}{:<45}\n", "exercise2Output.txt", 'a', header = False)
 
-exercise1()
-exercise2()
-exercise3()
+def main():
+    exercise1()
+    exercise2()
+    exercise3()
+
+if __name__ == "__main__":
+    main()
