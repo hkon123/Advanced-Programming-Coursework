@@ -64,12 +64,27 @@ class Date(object):
             return True
         return False
 
+    def __le__(self, other):
+
+        if self.year <= other.year:
+            if self.month <= other.month:
+                if self.day <= other.day:
+                    return True
+            if self.month <= other.month:
+                return True
+        if self.year <= other.year:
+            return True
+        return False
+
 
 
 def exercise2():
 
     data, keys = exercise1(debug = False)
     data.sort(key=lambda x: x.get('Updated'))
+    ##Assertion to verify sorting is correct
+    for i in range(len(data)-1):
+        assert data[i].get('Updated') <= data[i+1].get('Updated'), "Sorting not correct"
     keys.insert(0, keys.pop())
     writeListOfDictsToFile(data,keys,"{:<15} {:<10} {:<22} {:<20} {:<45}{:<45}\n", "exercise2Output.txt", 'w')
 
